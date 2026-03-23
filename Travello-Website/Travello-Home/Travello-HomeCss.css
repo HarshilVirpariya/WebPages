@@ -1,0 +1,1019 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	height: 130vh;
+	width: 100%;
+/*	border: 2px solid black;*/
+	background-image: url(img/Bg.jpg);
+	background-size: cover;
+/*	background-position: center;*/
+	background-attachment: fixed;
+	background-color: gray;
+}
+nav{
+	height: 100px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.logo{
+	height: 100px;
+	width: 20%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#logo-h1 a{
+	text-decoration: none;
+	font-size: 45px;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	color: #fff;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+}
+.navlinks{
+	height: 100px;
+	width: 50%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.navlinks a{
+	text-decoration: none;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: #fff;
+	text-align: center;
+	border-radius: 8px;
+/*	border: 2px solid black;*/
+	padding: 10px;
+	text-align: center;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+	position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.navlinks a::before{
+    content:"";
+    position: absolute;
+    top: 110%;
+    left: 49.5%;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: 0.5s cubic-bezier(0.5,1.6,0.4,0.7);
+    transform-origin: 0.0;
+}
+.navlinks a:hover::before{
+    width: 70%;
+    z-index: -1;
+}
+.navlinks a::after{
+    content:"";
+    position: absolute;
+    top: 110%;
+    right: 49.5%;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: 0.5s cubic-bezier(0.5,1.6,0.4,0.7);
+    transform-origin: 0.0;
+}
+.navlinks a:hover::after{
+    width: 70%;
+    z-index: -1;
+}
+.navlinks a:hover{
+	opacity: 1;
+}
+.navlinks a.active{
+	border: 2px solid #fff;
+	border-radius: 8px;
+/*	background-color: transparent;*/
+	font-weight: bold;
+}
+.call{
+	height: 100px;
+	width: 20%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#call-h4{
+	color: #fff;
+	letter-spacing: 1.5px;
+	font-weight: bolder;
+	font-size: 20px;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+}
+.text{
+	height: 200px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	margin-top: 6%;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#text-h1{
+	font-size: 100px;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2.5px;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */	
+}
+.side-links{
+	height: 200px;
+	width: 20%;
+/*	border: 2px solid black;*/
+	position: absolute;
+	right: 0;
+	margin-top: 15%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: end;
+	flex-direction: column;
+}
+.side-links a{
+	text-decoration: none;
+	color: #fff;
+	padding-right: 5%;
+	font-size: 20px;
+	letter-spacing: 2px;
+	opacity: 0.6;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+	position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.side-links a:hover{
+    color: #fff;
+    opacity: 1;
+}
+.side-links a::before{
+    content:"";
+    position: absolute;
+    top: 110%;
+    right: 11px;
+    height: 3px;
+    width: 0%;
+    background-color: #fff;
+    transition: 0.5s cubic-bezier(0.5,1.6,0.4,0.7);
+    transform-origin: 0.0;
+}
+.side-links a:hover::before{
+    width: 100%;
+    border-radius: 100px;
+    z-index: -1;
+}
+.blur-div{
+	height: 250px;
+	width: 90%;
+	border-radius: 15px;
+	margin-left: 5%;
+	margin-top: 5%;
+	box-shadow: 1px 0px 40px #fff;
+/*	border: 2px solid #fff;*/
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	backdrop-filter: blur(4px);
+}
+.heading{
+	height: 50px;
+	width: 20%;
+/*	border: 2px solid #fff;*/
+	margin-top: 5%;
+	border-radius: 15px 15px 0px 0px;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#heading-p{
+	font-size: 18px;
+	padding-top: 6%;
+	font-weight: bolder;
+	letter-spacing: 2px;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */	
+}
+.inputs{
+	height: 100px;
+	width: 90%;
+	border: 2px solid #fff;
+	border-radius: 15px;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#city-inp{
+	height: 50px;
+	width: 20%;
+	border: none;
+	background-color: whitesmoke;
+	box-shadow: 0.9px 0px 20px gray;
+	border-radius: 9px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+}
+#city-inp:hover{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+#dep-inp{
+	height: 50px;
+	width: 15%;
+	border: none;
+	background-color: whitesmoke;
+	box-shadow: 0.9px 0px 20px gray;
+	border-radius: 9px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+}
+#dep-inp:hover{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+#arri-inp{
+	height: 50px;
+	width: 15%;
+	border: none;
+	background-color: whitesmoke;
+	box-shadow: 0.9px 0px 20px gray;
+	border-radius: 9px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+}
+#arri-inp:hover{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+#bud-inp{
+	height: 50px;
+	width: 20%;
+	border: none;
+	background-color: whitesmoke;
+	box-shadow: 0.9px 0px 20px gray;
+	border-radius: 9px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+  	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+}
+#bud-inp:hover{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+#btn-1{
+	height: 50px;
+	width: 17%;
+	border: 2px solid black;
+	letter-spacing: 3px;
+	background-color: #000;
+	color: #fff;
+	font-size: 20px;
+	overflow: hidden;
+	border-radius: 10px;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+	position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+#btn-1:hover{
+    color: #000;
+    opacity: 1;
+}
+#btn-1::before{
+    content:"";
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    height: 100%;
+    width: 0%;
+    background-color: #fff;
+/*	border-radius: 0px 8px 8px 0px;*/
+    transition: 0.5s cubic-bezier(0.5,1.6,0.4,0.7);
+    transform-origin: 0.0;
+}
+#btn-1:hover::before{
+    width: 50%;
+/*    border-radius: 0px 8px 8px 0px;*/
+    z-index: -1;
+}
+#btn-1::after{
+    content:"";
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    height: 100%;
+    width: 0%;
+    background-color: #fff;
+/*    border-radius: 8px 0px 0px 8px;*/
+    transition: 0.5s cubic-bezier(0.5,1.6,0.4,0.7);
+    transform-origin: 0.0;
+}
+#btn-1:hover::after{
+    width: 50%;
+/*    border-radius: 8px 0px 0px 8px;*/
+    z-index: -1;
+}
+.intro{
+	height: 400px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	background-image: url(img/intro.png);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.into img{
+	width: 100%;
+	margin-top: -6%;
+}
+.intro-1{
+	height: 250px;
+	width: 25%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 5%;
+}
+.intro-1 img{
+	height: 50px;
+	width: 50px;
+}
+#intro-1-p{
+	font-size: 16px;
+/*	font-weight: bold;*/
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+#span{
+	color: lightgrey;
+}
+.intro-2{
+	height: 250px;
+	width: 25%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 5%;
+}
+.intro-2 img{
+	height: 50px;
+	width: 50px;
+}
+#intro-2-p{
+	font-size: 16px;
+/*	font-weight: bold;*/
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+.intro-3{
+	height: 250px;
+	width: 25%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 5%;
+}
+.intro-3 img{
+	height: 50px;
+	width: 50px;
+}
+#intro-3-p{
+	font-size: 16px;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+.destination{
+	height: 180vh;
+	width: 100%;
+/*	border: 2px solid black;*/
+}
+.des-heading{
+	height: 200px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#des-heading-h6{
+	color: grey;
+	letter-spacing: 2px;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+#des-heading-h1{
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+}
+.des-info{
+	height: 850px;
+	width: 100%;
+/*	border: 2px solid red;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.des-card{
+	height: 400px;
+	width: 30%;
+/*	border: 2px solid black;*/
+	overflow: hidden;
+	transition: 0.5s;
+}
+.des-card:hover{
+	transform: scale(0.9);
+	box-shadow: 0.9px 0px 20px black;
+}
+.des-card:hover a{
+	color: orangered;
+}
+.des-card:hover .des-img img{
+	transform: scale(1.3);
+}
+.des-img{
+	height: 250px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	position: relative;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.des-img a{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-decoration: none;
+	color: #fff;
+	padding: 8px;
+	border: 2px solid black;
+	background-color: #000;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+}
+.des-img img{
+	height: 100%;
+	width: 100%;
+	transition: 0.5s;
+}
+.des-description{
+	height: 148px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-direction: column;
+}
+.des-description a{
+	padding-left: 5%;
+	text-decoration: none;
+	color: #000;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+	font-weight: bold;
+	font-size: 35px;
+	letter-spacing: 2px;	
+}
+#des-description-p{
+	padding-left: 5%;
+	font-size: 20px;
+	color: grey;
+	font-weight: lighter;
+	letter-spacing: 1px;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+#des-description-h6{
+	padding-left: 5%;
+	letter-spacing: 2px;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+.testimonials{
+	height: 550px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	background-image: url(img/testimonials.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+#testimonials-h6{
+	color: #fff;
+	letter-spacing: 2px;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+#testimonials-h1{
+	color: #fff;
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+}
+#testimonials-p{
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+/*	font-family: 'Advent Pro', sans-serif; */
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+	font-family: 'Kanit', sans-serif;
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+}
+#testimonials-h4{
+	font-size: 25px;
+	color: #fff;
+	letter-spacing: 2px;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+}
+#testimonials-span{
+	font-size: 15px;
+	letter-spacing: 2px;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+}
+.latest{
+	height: 700px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#latest-1{
+	height: 600px;
+	width: 45%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+.trip{
+	height: 200px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.sub-trip{
+	height: 170px;
+	width: 95%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.sub-trip:hover img{
+	transform: scale(1.2);
+}
+.trip-photo{
+	height: 170px;
+	width: 40%;
+/*	border: 2px solid black;*/
+overflow: hidden;
+}
+.trip-photo img{
+	height: 100%;
+	width: 100%;
+	transition: 0.5s;
+}
+.trip-descrption{
+	height: 170px;
+	width: 60%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	flex-wrap: wrap;
+}
+#trip-descrption-span{
+	font-size: 20px;
+	color: grey;
+	letter-spacing: 2px;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+#trip-descrption-h1{
+	font-size: 30px;
+	letter-spacing: 2px;
+	padding-left: 5%;
+	font-weight: bold;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+#trip-descrption-a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	padding-left: 5%;
+	font-size: 30px;
+	letter-spacing: 1px;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+}
+#trip-descrption-a-span{
+	font-size: 12px;
+	color: grey;
+	font-weight: bold;
+	padding-top: -20%;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+}
+#trip-descrption-p{
+	font-size: 12px;
+	padding-left: 5%;
+	font-weight: bold;
+	letter-spacing: 0.7px;
+	padding-top: -10%;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+}
+#latest-2{
+	height: 600px;
+	width: 45%;
+/*	border: 2px solid black;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.latest-2-img{
+	height: 500px;
+	width: 60%;
+/*	border: 2px solid black;*/
+	overflow: hidden;
+}
+.latest-2-img img{
+	height: 100%;
+	width: 100%;
+}
+footer{
+	height: 500px;
+	width: 100%;
+/*	border: 2px solid black;*/
+	background-image: url(img/footer_1.jpg);
+/*	background-size: cover;*/
+/*	background-position: center;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.subscribe{
+	height: 100px;
+	width: 100%;
+/*	border: 2px solid #fff;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#footer-inp-1{
+	height: 50px;
+	width: 30%;
+	border: 2px solid #fff;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/	
+	transition: 0.5s;
+}
+#footer-inp-1:hover{
+	border-top: 2px solid red;
+	border-bottom: 2px solid red;
+}
+#footer-inp-2{
+	height: 50px;
+	width: 50%;
+	border: 2px solid #fff;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; 	*/
+	transition: 0.5s;
+}
+#footer-inp-2:hover{
+	border-top: 2px solid red;
+	border-bottom: 2px solid red;
+}
+#btn-2{
+	height: 50px;
+	width: 17%;
+	border: 2px solid #fff;
+	letter-spacing: 3px;
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+	overflow: hidden;
+	border-radius: 10px;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+	position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+#btn-2:hover{
+    color: #fff;
+    opacity: 1;
+}
+#btn-2::before{
+    content:"";
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    height: 100%;
+    width: 0%;
+    background-color: #000;
+/*	border-radius: 0px 8px 8px 0px;*/
+    transition: 0.5s cubic-bezier(0.5,1.6,0.4,0.7);
+    transform-origin: 0.0;
+}
+#btn-2:hover::before{
+    width: 50%;
+/*    border-radius: 0px 8px 8px 0px;*/
+    z-index: -1;
+}
+#btn-2::after{
+    content:"";
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 100%;
+    width: 0%;
+    background-color: #000;
+/*    border-radius: 8px 0px 0px 8px;*/
+    transition: 0.5s cubic-bezier(0.5,1.6,0.4,0.7);
+    transform-origin: 0.0;
+}
+#btn-2:hover::after{
+    width: 50%;
+/*    border-radius: 8px 0px 0px 8px;*/
+    z-index: -1;
+}
+.formalitis{
+	height: 300px;
+	width: 100%;
+/*	border: 2px solid #fff;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.form{
+	height: 300px;
+	width: 30%;
+/*	border: 2px solid #fff;*/
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+.form img{
+	height: 30%;
+	width: 30%;
+}
+#form-h1{
+	color: #fff;
+	font-size: 30px;
+	letter-spacing: 2px;
+/*	font-family: 'Advent Pro', sans-serif; */
+	font-family: 'Bebas Neue', sans-serif; 
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */	
+}
+#form-p{
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-family: 'Advent Pro', sans-serif; 
+/*	font-family: 'Bebas Neue', sans-serif; */
+/*	font-family: 'Chakra Petch', sans-serif; */
+/*	font-family: 'Kanit', sans-serif;*/
+/*	font-family: 'Michroma', sans-serif; */
+/*	font-family: 'Tektur', cursive; */
+/*	font-family: 'Ysabeau SC', sans-serif; */
+}
